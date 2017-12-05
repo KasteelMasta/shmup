@@ -27,14 +27,29 @@ public class PlayerScript : MonoBehaviour
           speed.x * inputX,
           speed.y * inputY);
 
+        // 5 - Shooting
+        bool shoot = Input.GetButtonDown("Fire1");
+        shoot |= Input.GetButtonDown("Fire2");
+        // Careful: For Mac users, ctrl + arrow is a bad idea
+
+        if (shoot)
+        {
+            WeaponScript weapon = GetComponent<WeaponScript>();
+            if (weapon != null)
+            {
+                // false because the player is not an enemy
+                weapon.Attack(false);
+            }
+        }
+
     }
 
     void FixedUpdate()
     {
-        // 5 - Get the component and store the reference
+        // 6 - Get the component and store the reference
         if (rigidbodyComponent == null) rigidbodyComponent = GetComponent<Rigidbody2D>();
 
-        // 6 - Move the game object =>
+        // 7 - Move the game object
         rigidbodyComponent.velocity = movement;
     }
 }
