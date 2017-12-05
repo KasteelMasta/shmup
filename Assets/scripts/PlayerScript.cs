@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
         // 5 - Get the component and store the reference
         if (rigidbodyComponent == null) rigidbodyComponent = GetComponent<Rigidbody2D>();
 
-        // 6 - Move the game object
+        // 6 - Move the game object =>
         rigidbodyComponent.velocity = movement;
     }
 }
