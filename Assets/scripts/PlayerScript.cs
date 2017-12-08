@@ -37,6 +37,8 @@ public class PlayerScript : MonoBehaviour
             {
                 // false because the player is not an enemy
                 weapon.Attack(false);
+                // Piou piou
+                SoundEffectsHelper.Instance.MakePlayerShotSound();
             }
         }
 

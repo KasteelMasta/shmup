@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  timeToLive: 5
   isEnemyShot: 0
 --- !u!114 &114941518362001216
 MonoBehaviour:
@@ -113,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9233d40783461be4ca0dc23099107202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 30, y: 30}
+  speed: {x: 15, y: 15}
   direction: {x: 1, y: 0}
 --- !u!212 &212206878755125210
 SpriteRenderer:
