@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Projectile behavior
@@ -13,6 +11,7 @@ public class ShotScript : MonoBehaviour
     /// Damage inflicted
     /// </summary>
     public int damage = 1;
+    public int timeToLive = 20;
 
     /// <summary>
     /// Projectile damage player or enemies?
@@ -22,6 +21,6 @@ public class ShotScript : MonoBehaviour
     void Start()
     {
         // 2 - Limited time to live to avoid any leak
-        Destroy(gameObject, 20); // 20sec
+        Destroy(gameObject, timeToLive); // 20sec
     }
 }
