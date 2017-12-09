@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// Player controller and behavior
+/// Player controller and behavior - Test
 /// </summary>
 public class PlayerScript : MonoBehaviour
 {
